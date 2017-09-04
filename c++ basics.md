@@ -61,14 +61,18 @@ int main()
 ```
 ### For loops
 ```c++
-#include <iostream>
-
-int main()
-{
-    for(int i=0; i< 10;i++)
-    {
-        std::cout<<"i = "<<i<<"\n";
+#include<iostream>
+int main(){
+    int inp;
+    float sum = 0;
+    
+    for(int i=0; i<5; i++){
+        std::cout<<"Enter number "<<i<<":\n";
+        std::cin>>inp;
+        sum = sum + inp;
     }
-    return 0;
+    
+    std::cout<<"The sum = "<<sum<<"\n";
+    std::cout<<"The average = "<<sum/5;
 }
 ```
