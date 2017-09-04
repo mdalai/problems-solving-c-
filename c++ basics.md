@@ -59,3 +59,16 @@ int main()
     return 0;
 }
 ```
+### For loops
+```c++
+#include <iostream>
+
+int main()
+{
+    for(int i=0; i< 10;i++)
+    {
+        std::cout<<"i = "<<i<<"\n";
+    }
+    return 0;
+}
+```
