@@ -107,3 +107,28 @@ int main()
     return 0;
 }
 ```
+## Functions
+```c++
+/*Goal: create a function that searches an array for a given value. */
+#include<iostream>
+int search(int arr[], int length, int key);
+int main()
+{
+    const int size = 4;
+    int array[] = {345,75896,2,543};
+    int searchKey = 543;
+    std::cout<<"Found at: "<<search(array, size, searchKey);
+    return 0;
+}
+
+int search(int arr[], int length, int key){
+    int found = -1;
+    for(int i; i<length; i++){
+        if(arr[i]==key){
+            found = i;
+            break;
+        }
+    }
+    return found;
+}
+```
